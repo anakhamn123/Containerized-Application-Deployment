@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Application Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h2>🐳 DOCKER DASHBOARD</h2>
+        <span class="online-status">● Online</span>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="hero">
+            <h1>Application Dashboard</h1>
+            <p>Containerized Application Deployment & Management</p>
+        </section>
+
+        <section class="card-grid">
+
+            <div class="dashboard-card">
+                <div class="card-icon">✓</div>
+                <h2>Application Status</h2>
+                <p class="success-text">● Running Successfully</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">▦</div>
+                <h2>Container Information</h2>
+                <p>Docker Project App</p>
+                <p>Port: 5000</p>
+                <p>Server: Gunicorn</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">☁</div>
+                <h2>Deployment Information</h2>
+                <p>Platform: Docker</p>
+                <p>Management: Docker Compose</p>
+                <p>Environment: Local</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">&lt;/&gt;</div>
+                <h2>Project Information</h2>
+                <p>Framework: Python Flask</p>
+                <p>Application: Web Dashboard</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-card technology-card">
+            <div class="card-icon">▰</div>
+            <h2>Technologies Used</h2>
+
+            <div class="technology-list">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Docker</span>
+                <span>Gunicorn</span>
+                <span>Docker Compose</span>
+                <span>HTML & CSS</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        DOCKER PROJECT © 2026
+    </footer>
+
+</body>
+</html>
